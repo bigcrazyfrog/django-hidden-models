@@ -2,6 +2,9 @@
 django-hidden-models
 ==================
 
+.. image:: https://coveralls.io/repos/bigcrazyfrog/django-hidden-models/badge.png
+    :target: https://coveralls.io/r/bigcrazyfrog/django-hidden-models
+
 Simply hiding a useless data from query results.
 
 Status: developing

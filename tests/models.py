@@ -1,5 +1,7 @@
+from django.db import models
+
 from hidden_models.models import VisibleModel
 
 
 class Article(VisibleModel):
-    pass
+    name = models.CharField(max_length=100)
