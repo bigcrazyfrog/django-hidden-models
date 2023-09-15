@@ -2,6 +2,8 @@
 django-hidden-models
 ==================
 
+.. image:: https://github.com/bigcrazyfrog/django-hidden-models/actions/workflows/tests.yaml/badge.svg
+   :target: https://github.com/bigcrazyfrog/django-hidden-models/actions/
 .. image:: https://coveralls.io/repos/bigcrazyfrog/django-hidden-models/badge.png
     :target: https://coveralls.io/r/bigcrazyfrog/django-hidden-models
 
