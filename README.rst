@@ -1,15 +1,17 @@
-==================
+====================
 django-hidden-models
-==================
+====================
 
 .. image:: https://github.com/bigcrazyfrog/django-hidden-models/actions/workflows/tests.yaml/badge.svg
    :target: https://github.com/bigcrazyfrog/django-hidden-models/actions/
 .. image:: https://coveralls.io/repos/bigcrazyfrog/django-hidden-models/badge.png
     :target: https://coveralls.io/r/bigcrazyfrog/django-hidden-models
+.. image:: https://img.shields.io/pypi/pyversions/django-hidden-models.svg
+   :target: https://pypi.python.org/pypi/django-hidden-models
+.. image:: https://img.shields.io/pypi/frameworkversions/django/django-hidden-models.svg
+   :target: https://pypi.python.org/pypi/django-hidden-models
 
 Simply hiding a useless data from query results.
-
-Status: developing
 
 Example
 -------
@@ -41,9 +43,9 @@ Example
 Installation
 ------------
 
-Installing from github. ::
+Installing from pypi (using pip). ::
 
-    git clone https://github.com/bigcrazyfrog/django-hidden-models.git
+    pip install django-hidden-models
 
 Add ``hidden_models`` in your ``INSTALLED_APPS``:
 
