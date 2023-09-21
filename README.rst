@@ -13,6 +13,8 @@ django-hidden-models
 
 Simply hiding a useless data from query results.
 
+Read `documentation`_
+
 Example
 -------
 
@@ -47,7 +49,6 @@ Installing from `PyPI`_ (using pip). ::
 
     pip install django-hidden-models
 
-.. _PyPI: https://pypi.org/project/django-hidden-models/
 
 Add ``hidden_models`` in your ``INSTALLED_APPS``:
 
@@ -66,3 +67,5 @@ Dependencies
 release in each series only) on Python 3.7+.
 
 .. _Django: https://www.djangoproject.com/
+.. _PyPI: https://pypi.org/project/django-hidden-models/
+.. _documentation: https://github.com/bigcrazyfrog/django-hidden-models/blob/master/docs/quickstart.rst
