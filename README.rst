@@ -43,9 +43,11 @@ Example
 Installation
 ------------
 
-Installing from pypi (using pip). ::
+Installing from `PyPI`_ (using pip). ::
 
     pip install django-hidden-models
+
+.. _PyPI: https://pypi.org/project/django-hidden-models/
 
 Add ``hidden_models`` in your ``INSTALLED_APPS``:
 
