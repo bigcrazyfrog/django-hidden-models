@@ -55,3 +55,12 @@ Add ``hidden_models`` in your ``INSTALLED_APPS``:
         'hidden_models',
         [...]
     ]
+
+
+Dependencies
+------------
+
+``django-hidden-models`` supports `Django`_ 3.2+ (latest bugfix
+release in each series only) on Python 3.7+.
+
+.. _Django: https://www.djangoproject.com/

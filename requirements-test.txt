@@ -1,3 +1,10 @@
-django
+# https://pypi.org/project/Django/
+Django
+
+# Test coverage history
+# https://pypi.org/project/coveralls/
 coveralls
+
+# PostgreSQL database adapter
+# https://pypi.org/project/psycopg2/
 psycopg2
