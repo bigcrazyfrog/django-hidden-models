@@ -5,6 +5,7 @@ from hidden_models.managers import (
     VisibleHiddenManager,
     VisibleManager
 )
+from .config import VISIBLE_FIELD_NAME
 
 
 class VisibleModel(models.Model):
@@ -23,11 +24,16 @@ class VisibleModel(models.Model):
         The :class:`hidden_models.managers.VisibleHiddenManager` returns hidden models.
     """
 
-    visible = models.BooleanField(default=True)
-
     objects = VisibleManager()
     all_objects = VisibleAllManager()
     hidden_objects = VisibleHiddenManager()
 
     class Meta:
         abstract = True
+
+
+# Add custom visible field to model class
+VisibleModel.add_to_class(
+    VISIBLE_FIELD_NAME,
+    models.BooleanField(default=False),
+)

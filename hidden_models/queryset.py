@@ -1,5 +1,7 @@
 from django.db.models import query
 
+from hidden_models.config import VISIBLE_FIELD_NAME
+
 
 class VisibleQueryset(query.QuerySet):
     """Default queryset for the VisibleManager.
@@ -15,8 +17,8 @@ class VisibleQueryset(query.QuerySet):
 
         Hidden objects are not displayed in query results.
         """
-        return super().update(visible=False)
+        return super().update(**{VISIBLE_FIELD_NAME: False})
 
     def show(self) -> int:
         """Make objects in queryset visible."""
-        return super().update(visible=True)
+        return super().update(**{VISIBLE_FIELD_NAME: True})

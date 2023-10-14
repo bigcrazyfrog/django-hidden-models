@@ -2,6 +2,7 @@ from typing import Optional, Type
 
 from django.db import models
 
+from hidden_models.config import VISIBLE_FIELD_NAME
 from hidden_models.queryset import VisibleQueryset
 
 
@@ -36,7 +37,7 @@ class VisibleManager(models.Manager):
         """Return a new ``VisibleQueryset`` object that contains
         only visible models.
         """
-        return super().get_queryset().filter(visible=True)
+        return super().get_queryset().filter(**{VISIBLE_FIELD_NAME: True})
 
 
 class VisibleHiddenManager(VisibleManager):
@@ -49,7 +50,7 @@ class VisibleHiddenManager(VisibleManager):
     """
 
     def get_queryset(self) -> VisibleQueryset:
-        return super(VisibleManager, self).get_queryset().filter(visible=False)
+        return super(VisibleManager, self).get_queryset().filter(**{VISIBLE_FIELD_NAME: False})
 
 
 class VisibleAllManager(VisibleManager):
