@@ -5,6 +5,15 @@ Changelog for django-hidden-models
 To be released
 --------
 
-- Add supporting custom field name in `VisibleModel`
 - Add `hide` and `show` methods for model instance
-- Move tests to GitHub Actions: https://github.com/bigcrazyfrog/django-hidden-models/actions
+
+
+0.1.2
+--------
+
+- Add supporting custom field name in `VisibleModel`
+
+0.1.1
+--------
+
+First release!
